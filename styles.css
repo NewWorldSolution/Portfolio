@@ -1,0 +1,195 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+#bars{
+  display: none;
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #c4c5c6;
+  border-radius: 5px;
+}
+
+.nav-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 24px;
+  padding: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+  border-radius: 5px;
+}
+
+#linkedin{
+  width: 20px;
+  height: 20px;
+  color: #0077B5;
+
+}
+#twitter{
+  width: 20px;
+  height: 20px;
+  color: #00aced;
+
+}
+#google{
+  width: 20px;
+  height: 20px;
+  color: #dd4b39;
+
+}
+
+.header-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.logo{
+  width: 25%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.header-title{
+  width: 70%;
+  text-align: center;
+}
+
+.name, .title{
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.name{
+  padding-top: 0.5em;
+  font-size: 4.5em;
+}
+
+.title{
+  font-size:3em;
+}
+
+@media screen and (max-width:767px){
+
+  .header-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .name, .title{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3em;
+  }
+
+  .name{
+    margin-top: 10px;
+    padding-top: 0;
+  }
+
+  .header-title{
+    text-align: left;
+  }
+
+  .title{
+    font-size:1.5em;
+  }
+
+  #bars {
+    display: block;
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 1.5em;
+    top: 20px;
+    cursor: pointer;
+  }
+
+  hr{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  }
+
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(0, -800px);
+    transform: translate(0, -800px);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav-item {
+    padding: 15px 5px;
+  }
+
+  .nav a{
+    padding: 0;
+    padding-right: 5px;
+  }
+
+  #icons{
+    text-align: right;
+    padding: 15px 11.5px;
+  }
+  .nav-list{
+    width: 412px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
