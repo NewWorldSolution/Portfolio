@@ -1,0 +1,286 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h4, h5 {
+  margin: 0;
+}
+
+h3{
+  margin: 5px 0;
+}
+
+footer {
+  border-radius: 5px;
+  padding: 0.5em 0;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: 1px solid #c4c5c6;
+  border-radius: 5px;
+
+}
+
+footer li {
+  display: inline-block;
+  margin: 1em 1em 0.5em 1.2em;
+}
+
+footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #616161;
+  padding: 1.3em;
+  border-radius: 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+
+footer ul{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#bars{
+  display: none;
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #c4c5c6;
+  border-radius: 5px;
+}
+
+.nav-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 24px;
+  padding: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+#linkedin{
+  width: 20px;
+  height: 20px;
+  color: #0077B5;
+
+}
+#twitter{
+  width: 20px;
+  height: 20px;
+  color: #00aced;
+
+}
+#google{
+  width: 20px;
+  height: 20px;
+  color: #dd4b39;
+
+}
+
+.header-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.logo{
+  width: 20%;
+
+}
+
+.header-title{
+  width: 70%;
+  text-align: center;
+}
+.header{
+  width: 100%;
+  font-size: 1.4em;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.name, .title{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main{
+  margin-top: 10px;
+  width: 98%;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.main p{
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+.main h1{
+  text-transform: uppercase;
+}
+
+.main_picture{
+  object-fit: cover;
+  max-width:100%;
+  max-height:100%;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.slogan{
+  display:block;
+}
+
+
+
+@media screen and (max-width:767px){
+
+  .header-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-title{
+    padding-top: 15px;
+    text-align: left;
+  }
+
+  .title{
+    font-size:1.3em;
+  }
+  .name{
+    padding-left: 18%;
+  }
+
+  #bars {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    padding: 1.5em;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  hr{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  }
+
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(0, -800px);
+    transform: translate(0, -800px);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav-item {
+    padding: 15px 5px;
+  }
+
+  .nav a{
+    padding: 0;
+    padding-right: 5px;
+  }
+
+  #icons{
+    text-align: right;
+    padding: 15px 11.5px;
+  }
+  .nav-list{
+    width: 412px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main_picture{
+    margin-top: -65px;
+
+  }
+
+  .frontend, .consultant, .fullstack{
+    width: 48%;
+    font-size: 1.35em;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .fullstack{
+    width: 98%;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  .frontend img, .consultant img, .fullstack img{
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+}
